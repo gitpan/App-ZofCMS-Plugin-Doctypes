@@ -1,0 +1,44 @@
+App-ZofCMS-Plugin-Doctypes
+
+If you are like me you definitely don't remember how to properly spell out the DOCTYPE (DOCument TYPE definition) in your pages and always rely on your editor or look it up. Well,
+fear no more! This little module contains all the DTDs and will stuff them into C<{t}>
+ZofCMS template's special key for you to use.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc App::ZofCMS::Plugin::Doctypes
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-ZofCMS-Plugin-Doctypes
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/App-ZofCMS-Plugin-Doctypes
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/App-ZofCMS-Plugin-Doctypes
+
+    Search CPAN
+        http://search.cpan.org/dist/App-ZofCMS-Plugin-Doctypes
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2008 'Zoffix
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
