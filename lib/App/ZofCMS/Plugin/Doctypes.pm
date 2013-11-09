@@ -3,7 +3,7 @@ package App::ZofCMS::Plugin::Doctypes;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 
 sub new { bless {}, shift }
 
@@ -45,6 +45,9 @@ sub process {
     = q|<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" |
         . q|"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">|;
 
+    $t->{'doctype HTML5'}
+    = q|<!DOCTYPE html>|;
+        
     return 1
         unless $conf{extra};
 
@@ -101,6 +104,8 @@ sub process {
 1;
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
 App::ZofCMS::Plugin::Doctypes - include DOCTYPEs in your pages without remembering how to spell them
@@ -149,6 +154,7 @@ This would be the first-level key in ZofCMS template as well as main config file
     <tmpl_var name="doctype XHTML 1.0 Transitional">
     <tmpl_var name="doctype XHTML 1.0 Frameset">
     <tmpl_var name="doctype XHTML 1.1">
+    <tmpl_var name="doctype HTML5">
 
 =head1 'EXTRA' MODE DTDs
 
